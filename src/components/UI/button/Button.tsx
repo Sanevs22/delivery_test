@@ -1,15 +1,23 @@
 import st from "./style.module.scss";
 
-
 interface ButtonProps {
-  value: number;
+  title: string;
+  type?: "second";
 }
 
 function Button(props: ButtonProps) {
-  return (
-    <div className={st.main}>
+  if (props.type === "second") {
+    return (
+      <>
+        <button className={st.second}>{props.title}</button>
+      </>
+    );
+  }
 
-    </div>
+  return (
+    <>
+      <button className={st.main}>{props.title}</button>
+    </>
   );
 }
 
