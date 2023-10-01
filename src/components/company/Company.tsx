@@ -2,7 +2,7 @@ import { useState } from "react";
 import cn from "classnames";
 import st from "./style.module.scss";
 import Arrow from "../../assets/icon/arrow.svg";
-import CompanyContent from "../companyContent/companyContent";
+import CompanyContent from "../companyContent/CompanyContent";
 import Status from "../UI/status/Status";
 
 interface CompanyProps {
@@ -27,7 +27,7 @@ function Company(props: CompanyProps) {
           className={cn(st.arrow, { [st.arrowOpen]: isOpen })}
           onClick={() => setIsOpen(!isOpen)}
         >
-          <img src={Arrow} alt="arrow" />
+          <img src={String(Arrow)} alt="arrow" />
         </div>
         <div className={st.img}>
           <img src={props.imgURL} alt={props.company.name} />

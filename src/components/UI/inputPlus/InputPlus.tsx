@@ -12,11 +12,11 @@ function InputPlus(props: InputPlusProps) {
   return (
     <div className={st.main}>
       <div className={st.icon} onClick={() => setValue(value - 1)}>
-        <img src={Minus} alt="minus" />
+        <img src={String(Minus)} alt="minus" />
       </div>
       <div className={st.text}>{value}</div>
       <div className={st.icon} onClick={() => setValue(value + 1)}>
-        <img src={Plus} alt="Plus" />
+        <img src={String(Plus)} alt="Plus" />
       </div>
     </div>
   );

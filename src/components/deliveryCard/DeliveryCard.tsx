@@ -17,7 +17,7 @@ function DeliveryCard(props: DeliveryCardProps) {
           className={cn(st.arrow, { [st.arrowOpen]: isOpen })}
           onClick={() => setIsOpen(!isOpen)}
         >
-          <img src={Arrow} alt="arrow" />
+          <img src={String(Arrow)} alt="arrow" />
         </div>
         <div className={st.status}>
           <div

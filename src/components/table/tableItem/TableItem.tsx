@@ -33,7 +33,7 @@ function TableItem(props: TableItemProps) {
         {props.sumAll.toString().replace(/(\d)(?=(\d{3})+$)/g, "$1 ")} RUB
       </div>
       <div className={st.trash}>
-        <img src={Trash} alt="Trash" />
+        <img src={String(Trash)} alt="Trash" />
       </div>
     </div>
   );

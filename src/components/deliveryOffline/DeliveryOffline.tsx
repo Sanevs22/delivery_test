@@ -9,7 +9,7 @@ function DeliveryOffline() {
       <div className={st.header}>
         <div className={st.text}>Доставка поставщика offine</div>
         <div className={st.trash}>
-          <img src={Trash} alt="trash" />
+          <img src={String(Trash)} alt="trash" />
         </div>
       </div>
       <div className={st.form}>
