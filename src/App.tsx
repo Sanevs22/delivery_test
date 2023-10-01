@@ -1,4 +1,4 @@
-import st from "./style.module.scss";
+import st from "./App.module.scss";
 import Header from "./components/header/Header";
 import Company from "./components/company/Company";
 import comp1Logo from "./assets/comp1.png";
