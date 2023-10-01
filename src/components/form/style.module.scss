@@ -1,0 +1,14 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px 40px;
+  align-items: end;
+}
+
+.box8 {
+  grid-column: 3/5;
+}
+
+.box11 {
+  grid-column: 2/5;
+}

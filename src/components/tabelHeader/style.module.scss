@@ -1,0 +1,17 @@
+.main {
+  border-radius: 5px;
+  background: var(--l-gray, #c7c7c7);
+  display: grid;
+  height: 62px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.box {
+  color: var(--, #1c1c1c);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px; /* 150% */
+}
