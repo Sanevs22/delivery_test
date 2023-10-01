@@ -2,7 +2,7 @@ import { useState } from "react";
 import cn from "classnames";
 import st from "./style.module.scss";
 import Arrow from "../../assets/icon/arrow.svg";
-import Form from "../form/Form";
+import CompanyContent from "../companyContent/companyContent";
 
 interface TabelHeaderProps {
   imgURL: string;
@@ -21,7 +21,7 @@ function Company(props: TabelHeaderProps) {
 
   return (
     <div className={st.main}>
-      <div className={st.header}>
+      <div className={cn(st.header, { [st.headerOpen]: isOpen })}>
         <div
           className={cn(st.arrow, { [st.arrowOpen]: isOpen })}
           onClick={() => setIsOpen(!isOpen)}
@@ -35,15 +35,20 @@ function Company(props: TabelHeaderProps) {
           <div className={st.name}>{props.company.name}</div>
           <div className={st.location}>{props.company.location}</div>
         </div>
-        <div>{props.order} ₽</div>
-        <div>{props.shipment} ₽</div>
-        <div>{props.remainder} ₽</div>
+        <div className={st.order}>
+          {props.order.toString().replace(/(\d)(?=(\d{3})+$)/g, "$1 ")} ₽
+        </div>
+        <div className={st.order}>
+          {props.shipment.toString().replace(/(\d)(?=(\d{3})+$)/g, "$1 ")} ₽
+        </div>
+        <div className={st.order}>
+          {props.remainder.toString().replace(/(\d)(?=(\d{3})+$)/g, "$1 ")} ₽
+        </div>
         <div>{props.status}</div>
       </div>
       {isOpen && (
-        <div>
-          test
-          <Form />
+        <div className={st.content}>
+          <CompanyContent />
         </div>
       )}
     </div>
