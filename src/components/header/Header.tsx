@@ -1,10 +1,10 @@
 import st from "./style.module.scss";
 
-interface TabelHeaderProps {
+interface HeaderProps {
   value: string[];
 }
 
-function TabelHeader(props: TabelHeaderProps) {
+function Header(props: HeaderProps) {
   return (
     <div className={st.main}>
       <div className={st.box}></div>
@@ -17,4 +17,4 @@ function TabelHeader(props: TabelHeaderProps) {
   );
 }
 
-export default TabelHeader;
+export default Header;

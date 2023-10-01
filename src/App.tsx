@@ -1,6 +1,5 @@
 import st from "./style.module.scss";
-
-import TabelHeader from "./components/tabelHeader/TabelHeader";
+import Header from "./components/header/Header";
 import Company from "./components/company/Company";
 import comp1Logo from "./assets/comp1.png";
 import comp2Logo from "./assets/comp2.png";
@@ -9,7 +8,7 @@ function App() {
   return (
     <div className={st.main}>
       <div className={st.header}>Доставка поставщиков online</div>
-      <TabelHeader
+      <Header
         value={[
           "Компания",
           "Сумма заказа",

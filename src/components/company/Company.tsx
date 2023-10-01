@@ -3,9 +3,9 @@ import cn from "classnames";
 import st from "./style.module.scss";
 import Arrow from "../../assets/icon/arrow.svg";
 import CompanyContent from "../companyContent/companyContent";
-import Status from "../status/Status";
+import Status from "../UI/status/Status";
 
-interface TabelHeaderProps {
+interface CompanyProps {
   imgURL: string;
   company: {
     name: string;
@@ -17,7 +17,7 @@ interface TabelHeaderProps {
   status: number;
 }
 
-function Company(props: TabelHeaderProps) {
+function Company(props: CompanyProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (

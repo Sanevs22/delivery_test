@@ -1,12 +1,5 @@
 import st from "./style.module.scss";
-
 import Input from "../UI/input/Input";
-
-interface InputProps {
-  value: string;
-  placeholder: string;
-  label: string;
-}
 
 function Form() {
   return (
