@@ -8,7 +8,7 @@ function CompanyContent() {
     <div className={st.main}>
       <div className={st.deliveryCard}>
         <DeliveryCard status="done" />
-        <DeliveryCard status="done" />
+        <DeliveryCard status="inRoad" />
         <DeliveryCard status="inRoad" />
       </div>
       <Form />

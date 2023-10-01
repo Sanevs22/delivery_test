@@ -3,6 +3,7 @@ import cn from "classnames";
 import st from "./style.module.scss";
 import Arrow from "../../assets/icon/arrow.svg";
 import CompanyContent from "../companyContent/companyContent";
+import Status from "../status/Status";
 
 interface TabelHeaderProps {
   imgURL: string;
@@ -44,7 +45,7 @@ function Company(props: TabelHeaderProps) {
         <div className={st.order}>
           {props.remainder.toString().replace(/(\d)(?=(\d{3})+$)/g, "$1 ")} ₽
         </div>
-        <div>{props.status}</div>
+        <Status value={props.status} />{" "}
       </div>
       {isOpen && (
         <div className={st.content}>

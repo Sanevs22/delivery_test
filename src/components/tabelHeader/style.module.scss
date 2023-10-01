@@ -3,11 +3,10 @@
   background: var(--l-gray, #c7c7c7);
   display: grid;
   height: 62px;
-  grid-template-columns: 90px 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 138px 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
   padding: 0 12px;
   gap: 14px;
-  padding-left: 32px;
 }
 
 .box {
