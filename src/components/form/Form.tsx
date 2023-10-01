@@ -1,6 +1,6 @@
 import st from "./style.module.scss";
 
-import Input from "../input/Input";
+import Input from "../UI/input/Input";
 
 interface InputProps {
   value: string;

@@ -1,0 +1,35 @@
+.main {
+  border-radius: 5px;
+  border: 1px solid #e4e4e4;
+  width: 92px;
+  height: 36px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon:hover {
+  background-color: #e4e4e4;
+  border-radius: 20px;
+}
+
+.text {
+  color: #282828;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px; /* 150% */
+  width: 30px;
+}

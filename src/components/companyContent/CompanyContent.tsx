@@ -1,7 +1,7 @@
 import cn from "classnames";
 import st from "./style.module.scss";
-import Form from "../form/Form";
 import DeliveryCard from "../deliveryCard/DeliveryCard";
+import DeliveryOffline from "../deliveryOffline/DeliveryOffline";
 
 function CompanyContent() {
   return (
@@ -11,7 +11,7 @@ function CompanyContent() {
         <DeliveryCard status="inRoad" />
         <DeliveryCard status="inRoad" />
       </div>
-      <Form />
+      <DeliveryOffline />
     </div>
   );
 }

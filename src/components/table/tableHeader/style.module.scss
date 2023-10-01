@@ -1,0 +1,20 @@
+.main {
+  border-radius: 5px;
+  background: var(--l-gray, #c7c7c7);
+  display: grid;
+  height: 62px;
+  grid-template-columns: 102px 1fr 92px 1fr 1fr 1fr 32px;
+  align-items: center;
+  gap: 14px;
+  justify-items: center;
+  padding-right: 20px;
+}
+
+.box {
+  color: var(--, #1c1c1c);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px; /* 150% */
+}
